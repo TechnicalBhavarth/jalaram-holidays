@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/Button'
+import TripFinder from '@/components/TripFinder'
 
 export default function Home() {
   return (
@@ -12,6 +13,15 @@ export default function Home() {
         </p>
         
         <Button>Find Trips</Button>
+        
+        {/* Trip Finder Section */}
+        <section className="mt-16 w-full">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4">Explore Our Destinations</h2>
+            <p className="text-gray-600">Browse through our curated collection of travel experiences</p>
+          </div>
+          <TripFinder />
+        </section>
         
         {/* TODO: Add Hero section with call-to-action */}
         {/* TODO: Add Featured Destinations section using Card components */}
